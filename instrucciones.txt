@@ -1,0 +1,25 @@
+Buen día, 
+
+Acompañando este documento se encuentran la carpeta "AlianzaFront" la cual fue desarrollada en angular 9 
+haciendo uso de material y bootstrap y la carpeta "AlianzaPrueba" la cual está desarrollada en Java 8 haciendo uso del frameworck SpringBoot
+
+El archivo "alianza.sql" es la base de datos relacional.
+
+Para la ejecucion del proyecto y la integracion de sus partes es necesario realizar los siguientes pasos:
+1) Ejecutar el script sql alianza en MySql el cual crea la base de datos y algunos registros de prueba.
+2) Desplegar en NetBeans el proyecto AlianzaPrueba el cual gracias a spring boot ya cuenta con un servidor tomcat para sus pruebas
+   esto con el fin de agilizar el despliegue del proyecto rest
+3) Levantar el servidor angular dentro de la carpeta AlianzaFront (ng serve --o) para que muestre el aplicativo al terminar de copilarlo.
+
+Notas: 
+	1) El puerto de ejecución java esta por default bajo 8080.
+		Rutas:
+			localhost:8080/v1/listarClientes    :    muestra el listado de clientes
+			localhost:8080/v1/{id_cliente}      :    muestra un cliente
+			localhost:8080/v1/guardarCliente    :    crea o actualiza un cliente haciendo uso de su modelo
+
+	2) El puerto de ejecución angular esta por default bajo 4200.
+		Rutas:
+			localhost:4200/                     :    muestra el listado de clientes
+			localhost:4200/{id_cliente}         :    muestra un cliente
+			localhost:4200/guardarCliente       :    crea o actualiza un cliente haciendo uso de su modelo
